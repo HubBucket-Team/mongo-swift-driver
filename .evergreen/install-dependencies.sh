@@ -26,8 +26,8 @@ make -j8 install
 cd "${PROJECT_DIRECTORY}"
 
 # install swiftenv
-git clone --depth 1 -b "osx-install-path" https://github.com/mbroadst/swiftenv.git "${SWIFTENV_ROOT}"
+git clone --depth 1 -b "kylef/user" https://github.com/kylef/swiftenv.git "${SWIFTENV_ROOT}"
 
 # install swift
 eval "$(swiftenv init -)"
-swiftenv install --install-local $SWIFT_VERSION
+swiftenv install --user $SWIFT_VERSION
